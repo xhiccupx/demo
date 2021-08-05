@@ -34,15 +34,18 @@ listed below are test cases for loan api. Run all the test cases in postman.
 2.	Username : enter wrong user name 
 3.	Password : enter wrong password
 * After logging in successfully a token will be generated which has expiration of 30 minutes.copy the token and create a KEY in headers with name x-access-token and paste the token in the value section of created key. You will be logged in for 30 mins. 
-*for generating token fwt is used.
+* for generating token fwt is used.
 # there are some accounts i have added you can use it for testing purpose.
 # login credentials for admin:
-Username : admin , Password : 12345 
+### Username : admin , Password : 12345 
 # login credentials for agent:
-Username : agent1 , Password : 12345 
-# login credentials for agent:
-Username : customer1 , Password : 12345 
-#To get  list of all users
+### Username : agent1 , Password : 12345 
+### Username : agent2 , Password : 12345
+# login credentials for customer:
+### Username : customer1 , Password : 12345
+### Username : customer2 , Password : 12345
+### Username : customer3 , Password : 12345
+# To get  list of all users
 *	 request type : GET
 *	route : /getallusers
 *	test case
