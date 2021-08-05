@@ -15,6 +15,15 @@ listed below are test cases for loan api. Run all the test cases in postman.
 3.	body(JSON):  {"name":"jef"}
 4.	body(JSON):  {}
 * note : The passwords will be encrypted and then stored in database. For every account a publc id will be generated using uuid and stored in database.The account created will by default be customer account. Only Admin can promote a user to agent or admin.
+# Promote user to admin :
+* only admin can do this 
+* request type : PUT 
+* route : /makeuseradmin/<public_id>
+# Promote user to agent :
+* only admin can do this 
+* request type : PUT 
+* route : /makeuseragent/<public_id>
+* Note : I have already created some accounts for you and stored in loan.db the credinteals are given below so no need to create accounts but for testing purposese you can test the above function(promote user to admin and promote user to agent) with already existing admin account.
 # Login
 *	request type : GET
 *	route : /login
