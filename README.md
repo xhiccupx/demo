@@ -5,7 +5,7 @@
 3.	Now api is hosted on loaclhost port 5000 you can run the following test cases on postman.
 This api is developed using flask as back-end and SQlite database.
 listed below are test cases for loan api. Run all the test cases in postman.
-# Given below are some test cases you can run to chaeck the RestAPI
+# Given below are some test cases you can run to check the RestAPI
 # Account creation
 *	request type : POST
 *	route : /createaccount
