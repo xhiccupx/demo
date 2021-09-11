@@ -1,10 +1,10 @@
 # loan-api
 # Features:
-## 1. List, view and edit users -  this can only be done by "agent" and "admin" roles
-## 2. Create a loan request on behalf of the user -  This can only be done by "agent" role. Inputs would be tenure selected (in months) and interest to be charged every month. Loan can have 3 states - "NEW", "REJECTED", "APPROVED".
-## 3. Approval of loan request - This can only be done by an "admin" role.
-## 4. Edit a loan (but not after it has been approved) -  This can be done only by "agent" role. But cannot be done if loan is in "Approved" state. The best designs here use "double safety" - logic in the code as well as database constraints.
-## 5. Ability to list and view loans (approved) or loan requests based on the filter applied -  By "filter" we mean - select by date of creation, date of update, state of loan (NEW, REJECTED, APPROVED), etc. This action can be done by all : "customer", "agent" and "admin" roles. HOWEVER - "customer" can only see his own loans...while "agent" and "admin" can see everyone's loans. The way you design your data model above will allow you to do this.
+1. List, view and edit users -  this can only be done by "agent" and "admin" roles
+2. Create a loan request on behalf of the user -  This can only be done by "agent" role. Inputs would be tenure selected (in months) and interest to be charged every month. Loan can have 3 states - "NEW", "REJECTED", "APPROVED".
+3. Approval of loan request - This can only be done by an "admin" role.
+4. Edit a loan (but not after it has been approved) -  This can be done only by "agent" role. But cannot be done if loan is in "Approved" state. The best designs here use "double safety" - logic in the code as well as database constraints.
+5. Ability to list and view loans (approved) or loan requests based on the filter applied -  By "filter" we mean - select by date of creation, date of update, state of loan (NEW, REJECTED, APPROVED), etc. This action can be done by all : "customer", "agent" and "admin" roles. HOWEVER - "customer" can only see his own loans...while "agent" and "admin" can see everyone's loans. The way you design your data model above will allow you to do this.
 # steps to run the code
 1.	command : docker build -t flask-loan-api .
 2.	command : docker run -d -p 5000:5000 flask-loan-api
